@@ -19,14 +19,3 @@ for each_line in input_file1:
 
 len(species_list_names)
 len(set(species_list_names))
-
-
-
-
-
-	
-			
-		
-		
-		
-			
