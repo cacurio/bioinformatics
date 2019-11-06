@@ -2,7 +2,7 @@ import os
 
 # Crea un directorio
 def create_directory():
-    directory = "/Users/cristhian/Proyectos/basch/Project2/sequences/"
+    directory = "/Users/cristhian/Proyectos/basch/project_bio_info/sequences/"
     try:
         os.stat(directory)
     except:
