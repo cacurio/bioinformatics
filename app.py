@@ -15,7 +15,7 @@ def create_directory():
 
 
 # obtener el nombre del archivo
-def regex_head(head):
+def regex_line(head):
     segment = re.search(r'>(\w*.\d*)', head)
     return segment.group(1)
 
@@ -26,7 +26,7 @@ def process_file(file):
     directory = create_directory()
     for line in input:
         if line[0] == '>':
-            name_file = regex_head(line)
+            name_file = regex_line(line)
             output = open(directory + name_file + EXTENSION_FILE, 'w')
             output.write(line)
         else:
